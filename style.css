@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #0d0d0d;
+  --text-color: #e6ffe6;
+  --accent-color: #00ff00;
+  --card-bg: #1a1a1a;
+}
+body.light {
+  --bg-color: #f4f4f4;
+  --text-color: #111;
+  --accent-color: #007acc;
+  --card-bg: #fff;
+}
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  padding-top: 40px;
+}
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+}
+h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+}
+.theme-toggle {
+  margin-top: 10px;
+  background: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+section {
+  margin-top: 60px;
+}
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.skills li {
+  background: var(--card-bg);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+input, textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+}
+.btn {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  padding: 40px 0 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
